@@ -5,7 +5,7 @@
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Code Climate][codeclimate-image]][codeclimate-url]
 
-Proxy Generic Data Store for gcloud.
+Proxy Generic Data Store for Google Cloud.
 
 ## Install
 
@@ -23,7 +23,7 @@ module.exports = {
       adapter: require('proxy-generic-gcloud'),
       options: {
           project_id: process.env.GLCOUD_PROJECT_ID,
-          key_filename: process.env.GLCOUD_KEY_FILENAME, // NOTE: Must Be Fully Resolved Path
+          key_filename: process.env.GCLOUD_KEY_FILENAME, // NOTE: Must Be Fully Resolved Path
           bucket: process.env.GCLOUD_BUCKET
       }
   }
