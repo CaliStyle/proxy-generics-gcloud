@@ -20,7 +20,7 @@
     "trailjs"
   ],
   "dependencies": {
-    "gcloud": "^0.37.0"
+    "google-cloud": "^0.45.2"
   },
   "devDependencies": {
     "eslint": "^2.4",

@@ -1,7 +1,7 @@
 /* eslint no-console: [0] */
 'use strict'
 
-const gcloud = require('gcloud')
+const gcloud = require('google-cloud')
 // const file = require('fs')
 module.exports = class ProxyGenericsGcloud {
   constructor(options) {
