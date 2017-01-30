@@ -20,7 +20,7 @@ module.exports = _.defaultsDeep({
         adapter: require('../'),
         options: {
           project_id: process.env.GCLOUD_PROJECT_ID,
-          key_filename: process.env.GLCOUD_KEY_FILENAME,
+          key_filename: path.resolve(__dirname, process.env.GLCOUD_KEY_FILENAME),
           bucket: process.env.GCLOUD_BUCKET
         }
       }
