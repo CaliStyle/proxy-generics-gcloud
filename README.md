@@ -18,9 +18,13 @@ $ npm install --save proxy-generics-gcloud
 ```js
 // config/proxyGenerics.js
 module.exports = {
+  // make the key gcloud, alternatively make the key data_store_provider to be the default data store provider  
   gcloud: {
       adapter: require('proxy-generic-gcloud'),
       options: {
+          project_id: process.env.GLCOUD_PROJECT_ID,
+          key_filename: process.env.GLCOUD_KEY_FILENAME, // NOTE: Must Be Fully Resolved Path
+          bucket: process.env.GCLOUD_BUCKET
       }
   }
 }
