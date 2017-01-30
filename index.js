@@ -47,7 +47,7 @@ module.exports = class ProxyGenericsGcloud {
         .on('error', (err) => {
           return resolve({
             status: 'failure',
-            failure_message: err
+            failure_message: err.toString()
           })
         })
         .on('finish', () => {
