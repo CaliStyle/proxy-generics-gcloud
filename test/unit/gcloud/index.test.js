@@ -16,6 +16,7 @@ describe('Data Store Generic gcloud', () => {
   it('should exist', () => {
     assert(DataStoreGenericService)
     assert(Gcloud)
+    console.log('USING AUTH FILE:', Gcloud.options.key_filename)
   })
 
   it('should upload a buffer', (done) => {

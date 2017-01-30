@@ -2,7 +2,7 @@
 
 const _ = require('lodash')
 const smokesignals = require('smokesignals')
-const path = require('path')
+// const path = require('path')
 
 module.exports = _.defaultsDeep({
   pkg: {
@@ -20,7 +20,7 @@ module.exports = _.defaultsDeep({
         adapter: require('../'),
         options: {
           project_id: process.env.GCLOUD_PROJECT_ID,
-          key_filename: path.resolve(__dirname, process.env.GLCOUD_KEY_FILENAME),
+          key_filename: process.env.GLCOUD_KEY_FILENAME,
           bucket: process.env.GCLOUD_BUCKET
         }
       }
