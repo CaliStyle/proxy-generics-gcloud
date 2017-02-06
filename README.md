@@ -7,6 +7,9 @@
 
 Proxy Generic Data Store for Google Cloud.
 
+Looking for [Proxy Engine?](https://github.com/calistyle/trailpack-proxy-engine)
+Looking for [Proxy Generics?](https://github.com/calistyle/trailpack-proxy-generics)
+
 ## Install
 
 ```sh
