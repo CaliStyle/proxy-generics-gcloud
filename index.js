@@ -25,7 +25,12 @@ module.exports = class ProxyGenericsGcloud {
    * @returns {string}
    */
   getPublicUrl (filename) {
-    return `https://storage.googleapis.com/${this.options.bucket}/${filename}`
+    if (this.options.host) {
+      return `${this.options.host}/${filename}`
+    }
+    else {
+      return `https://storage.googleapis.com/${this.options.bucket}/${filename}`
+    }
   }
 
   /**
